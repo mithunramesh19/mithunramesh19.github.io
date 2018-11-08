@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>P,R,S - Client</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header><img src="Header.jpg" style= "center" height="150" width="150"> </header>
+  <h1 id="header">Rock Paper Scissors</h1>
+  <button id = "enter_name_button" class="btn" >Enter Your Name</button>
+  <button id = "show_rules_button" class="btn">View Rules</button>
+  <button id = "show_stats_button" class="btn">View Stats</button>
+  <button id= "show_feedback" class="btn"> View Feedback </button>
+  <div id="feedback" class="hidden">
+    <p>Name Successfully Saved</p>
+  </div>
+  <div id="rules" class="hidden">
+    <h2>Rules</h2>
+    In order to play Rock Paper Scissors. You will need skill, determination and intellect. You will also need to know how to play the game. Here are some of the rules below.
+    <ul>
+      <li> During each round, a user must pick to play either Rock, Paper or Scissors</li>
+      <li> Rock beats Scissors </li>
+      <li> Paper beats Rock </li>
+      <li> Scissors beats Paper </li>
+      <li> Remember that you can toggle stats, information and more</li>
+      <li> Find out more about the RPS rules <a href="http://worldrps.com/game-basics/the-official-rules-of-rock-paper-scissors/"> by clicking here</a></li>
+    </ul>
+
+    <!--
+    The game of P, R, S is based on trust, skill and determination.
+    Each player must:
+    <ul>
+      <li>Make the right throw to win</li>
+      <li>Use their cunning to deceive their opponent</li>
+    </ul>
+    <a href="http://worldrps.com/game-basics/">Official rules here</a>
+  -->
+  </div>
+  <div id="stats" class="hidden">
+    <h3>Stats</h3>
+    <p id="game_count">Games Played: 0</p>
+    <p id="win_count">Games Won: 0</p>
+    <p id="win_loss">Win/Loss: 0/0</p>
+    <p id="player_stats"> Rock: 0%, Paper: 0%, Scissors: 0%</p>
+    <p id="bowser_stats"> Rock: 0%, Paper: 0%, Scissors: 0%</p>
+
+  </div>
+  <div id="enter_name" class="hidden">
+    <p>Enter a name to proceed</p>
+    <input type="text" value="" id="name_input" style="width: 150px;" />
+    <button id = "confirm_name">Confirm</button>
+  </div>
+
+  <div id="feedback" class="hidden">
+    <p> </p>
+  </div>
+
+
+
+  </div>
+  <div id="throw_choice">
+    <h4>Play the Game</h4>
+    <select id="throw">
+      <option value=""></option>
+      <option value="Rock">Rock</option>
+      <option value="Paper">Paper</option>
+      <option value="Scissors">Scissors</option>
+    </select>
+    <button id = "confirm_choice" >Confirm</button>
+    <button id = "Play_Again"> Restart Game </button>
+  </div>
+  <div id="game_results">
+      <img src="defaulthand.png" id="Hand" height="400" width="400">
+      <img src="DefaultBowser.jpg" id="Bowser" height="400" width="400">
+      <p id="result_hand"> Waiting for a Move</p>
+      <p id="win"></p>
+  </div>
+  <footer>
+    Mithun Ramesh - November, 2018.
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
